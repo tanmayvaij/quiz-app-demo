@@ -2,6 +2,7 @@
   "expo": {
     "name": "pocapp",
     "slug": "pocapp",
+    "scheme": "pocapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +22,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tanmayvaij.pocapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4372986d-ccc6-48c3-add7-bcc4a228c789"
+      }
     }
   }
 }
